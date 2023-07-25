@@ -11,6 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .gfont{
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -18,25 +30,49 @@
     <header>
         <!-- nav start -->
         <nav>
-            <div class="max-w-screen-xl mx-auto flex flex-col gap-4 md:flex-row justify-between items-center my-3">
-                <div>
+            <div class="max-w-screen-xl mx-auto flex flex-col gap-4 md:flex-row justify-between items-center py-5">
+                <div class="ml-8">
                     <img src="./images/logo2.png" alt="">
                 </div>
                 <div class="list-none flex flex-col md:flex-row gap-8 ">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="">Services </a></li>
                     <li><a href="">Cases</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Contact Us</a></li>
-                    
+
                 </div>
                 <div>
-                    <button class="p-4 btn btn-success">Free Consultation</button>
+                    <button class="p-4 mr-8 btn btn-success">Free Consultation</button>
                 </div>
             </div>
         </nav>
         <!-- nav end -->
     </header>
+
+    <main>
+        <!-- banner start -->
+
+        <section class="max-w-screen-xl mx-auto px-8 ">
+            <div class="hero min-h-[calc(100vh-88px)]" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold gfont">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 gfont">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div>
+                            <span> 
+                                <input type="text" placeholder="Search your services" class="input input-bordered py-3 pr-28 mr-2" />
+                            </span>
+                            <span><button class="btn btn-primary">Get Started</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- banner end -->
+    </main>
 
 </body>
 
